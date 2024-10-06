@@ -1,0 +1,46 @@
+{
+	"compilerOptions": {
+		"target": "ESNext",
+		"lib": ["dom", "dom.iterable", "esnext"],
+		"jsx": "react-jsx",
+		"module": "NodeNext",
+		"moduleResolution": "NodeNext",
+		"baseUrl": "./src",
+		"paths": {
+			"~/*": ["./*"],
+			"@cy/*": ["./../cypress/*"],
+			"@dev-server/*": ["./../devServer/*"]
+		},
+		"resolveJsonModule": true,
+		"allowJs": true,
+		"checkJs": true,
+		"importsNotUsedAsValues": "remove",
+		"newLine": "lf",
+		"allowSyntheticDefaultImports": true,
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"strict": true,
+		"noImplicitAny": true,
+		"strictNullChecks": true,
+		"strictFunctionTypes": true,
+		"useUnknownInCatchVariables": true,
+		"alwaysStrict": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"noImplicitReturns": true,
+		"noFallthroughCasesInSwitch": true,
+		"skipDefaultLibCheck": true,
+		"skipLibCheck": true,
+		"noEmit": true,
+		"allowImportingTsExtensions": true,
+		"types": ["cypress"]
+	},
+	"ts-node": {
+		"compilerOptions": {
+			"module": "ESNext",
+			"moduleResolution": "Node"
+		}
+	},
+	"include": ["src/", "cypress/"],
+	"exclude": ["node_modules/"]
+}

@@ -1,0 +1,12 @@
+{
+	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
+	"automerge": true,
+	"automergeType": "branch",
+	"prConcurrentLimit": 3,
+	"gitLabIgnoreApprovals": true,
+	"platformAutomerge": true,
+	"major": {
+		"automerge": false
+	},
+	"rebaseWhen": "behind-base-branch"
+}

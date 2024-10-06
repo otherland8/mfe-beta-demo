@@ -1,0 +1,87 @@
+{
+	"env": {
+		"browser": true,
+		"es2021": true,
+		"node": true
+	},
+
+	"extends": [
+		"eslint:recommended",
+		"plugin:@typescript-eslint/recommended",
+		"plugin:react/recommended"
+	],
+	"parser": "@typescript-eslint/parser",
+	"parserOptions": {
+		"ecmaFeatures": {
+			"jsx": true
+		},
+		"ecmaVersion": "latest",
+		"sourceType": "module"
+	},
+	"plugins": ["@typescript-eslint", "react"],
+	"rules": {
+		"indent": [
+			"error",
+			"tab",
+			{
+				"offsetTernaryExpressions": true,
+				"SwitchCase": 1,
+				"ignoredNodes": ["ArrowFunctionExpression"]
+			}
+		],
+		"linebreak-style": ["error", "unix"],
+		"quotes": ["error", "double"],
+		"semi": ["error", "always"],
+		"react/react-in-jsx-scope": "off",
+		"no-mixed-spaces-and-tabs": ["error", "smart-tabs"],
+		"@typescript-eslint/array-type": ["error", { "default": "generic" }],
+		"@typescript-eslint/naming-convention": [
+			"error",
+			{
+				"selector": "interface",
+				"format": ["PascalCase"],
+				"custom": {
+					"regex": "^I[A-Z]",
+					"match": false
+				}
+			}
+		],
+		"@typescript-eslint/no-namespace": ["error", { "allowDeclarations": true }],
+		"@typescript-eslint/no-shadow": ["error"],
+		"@typescript-eslint/no-use-before-define": [
+			"error",
+			{
+				"functions": true,
+				"classes": false,
+				"variables": true,
+				"allowNamedExports": true
+			}
+		],
+		"@typescript-eslint/no-unused-vars": [
+			"error",
+			{
+				"varsIgnorePattern": "^_",
+				"argsIgnorePattern": "^_"
+			}
+		]
+	},
+	"settings": {
+		"import/parsers": {
+			"@typescript-eslint/parser": [".ts", ".tsx"]
+		},
+		"import/resolver": {
+			"typescript": {
+				"alwaysTryTypes": true,
+				"project": "./"
+			},
+			"alias": {
+				"map": [
+					["~/*", "./src"],
+					["@cy/*", "./cypress"],
+					["@dev-server/*", "./devServer"]
+				]
+			}
+		}
+	},
+	"ignorePatterns": ["node_modules", "webpack.*.js"]
+}

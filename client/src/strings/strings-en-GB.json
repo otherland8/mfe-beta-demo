@@ -1,0 +1,20 @@
+{
+	"global": {
+		"lpn": "LPN",
+		"pageNotFoundTitle": "Page not found",
+		"pageNotFoundMessage": "Sorry, we couldn’t find the page you were looking for. It either doesn’t exist, or it’s moved somewhere else.",
+		"consignment": "consignment",
+		"consignments": "consignments",
+		"technicalErrorTitle": "Sorry, there’s a problem",
+		"technicalErrorMessage": "There’s been an error which means we can’t show you this page right now. Please wait a moment and try again.",
+		"accessDeniedTitle": "Access denied",
+		"accessDeniedMessage": "Sorry, you don’t have permission to access this page.",
+		"today": "Today",
+		"tomorrow": "Tomorrow",
+		"back": "Back",
+		"ospHome": "OSP Home",
+		"help": "Help",
+		"reload": "Reload",
+		"feedBack": "Give feedback"
+	}
+}
